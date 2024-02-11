@@ -12,7 +12,14 @@ struct ContentView: View {
         NavigationStack{
             // 奥から手前方向にレイアウト
             ZStack {
-
+                // 画像背景
+                Image(.backgroundTimer)
+                // リサイズする
+                    .resizable()
+                // セーフエリアを超えて画面全体に配慮する
+                    .ignoresSafeArea()
+                // アスペクト比(縦横比)を維持して短辺基準に収まるようにする
+                    .scaledToFill()
             } //ZStack
             // ナビゲーションにボタンを追加
             .toolbar{
