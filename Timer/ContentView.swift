@@ -10,9 +10,10 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationStack{
-            VStack {
-                Text("タイマー画面")
-            } // VStack
+            // 奥から手前方向にレイアウト
+            ZStack {
+
+            } //ZStack
             // ナビゲーションにボタンを追加
             .toolbar{
                 // ナビゲーションバーの右にボタンを追加
